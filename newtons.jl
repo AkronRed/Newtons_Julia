@@ -1,4 +1,5 @@
 # Maintainer:   Thomas Kellogg
+# References:   https://docs.juliaplots.org/stable/
 # License:      https://opensource.org/license/mit
 
 using Pkg
@@ -75,7 +76,7 @@ end
 # implement Newton's Method
 function newtons_method(x, alpha, tol)
     # init
-    K = 100
+    K = 1000
     hk = h(x)
     gk = g(x)
     o = [x[1],x[2], alpha]
